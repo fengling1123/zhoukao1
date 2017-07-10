@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+	<header>
+		服务
+		<i class="icon iconfont right">&#xf0344;</i>
+	</header>
+	<main>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/banner/banner_1.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner/banner_2.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner/banner_1.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner/banner_2.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<h3>我的服务</h3>
+		</div>
+		<ul class="conCheck">
+			<li><img src="images/icons/icon_1.jpg" alt=""><span>场景审核</span></li>
+			<li><img src="images/icons/icon_2.jpg" alt=""><span>去尾页</span></li>
+			<li><img src="images/icons/icon_3.jpg" alt=""><span>短信推广</span></li>
+			<li><img src="images/icons/icon_4.jpg" alt=""><span>保障服务</span></li>
+			<li><img src="images/icons/icon_5.jpg" alt=""><span>红人点点</span></li>
+			<li><img src="images/icons/icon_6.jpg" alt=""><span>秀场推广</span></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="title til">
+			<h3>场景相关</h3>
+		</div>
+		<ul class="conCheck">
+			<li><img src="images/icons/icon_7.jpg" alt=""><span>我的场景</span></li>
+			<li><img src="images/icons/icon_8.jpg" alt=""><span>子账号场景</span></li>
+			<li><img src="images/icons/icon_9.jpg" alt=""><span>字体商城</span></li>
+			<li></li>
+		</ul>
+	</main>
+	<footer>
+		<a href="javascript:;" class="on"><i class="icon iconfont">&#xe655;</i><span>创作</span></a>
+		<a href="javascript:;"><i class="icon iconfont">&#xe673;</i><span>服务</span></a>
+		<a href="javascript:;"><i class="icon iconfont">&#xe6a3;</i><span>我的</span></a>
+	</footer>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		var myswiper=new Swiper('.swiper-container',{
+			autoplay:1000
+		})
+		$('footer').on('click','a',function(){
+            $(this).addClass('on').siblings().removeClass('on');
+		})
+	</script>
+</body>
+</html>
